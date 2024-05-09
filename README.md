@@ -1,2 +1,2 @@
 # RoomFinder-ARCN.github.io
-RoomFinder project documentation
+RoomFinder project documentation :)
