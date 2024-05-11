@@ -1,0 +1,11 @@
+site_name: RoomFinder project
+theme: 
+  name: readthedocs
+nav:
+  - Domain Driven Design: index.md
+  - Clean Arquitectures: arquitectures.md
+  - DevOps: devops.md
+
+plugins:
+  - search
+  - mermaid2

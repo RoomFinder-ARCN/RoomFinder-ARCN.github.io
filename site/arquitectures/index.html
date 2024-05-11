@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Clean Arquitectures - RoomFinder project</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Clean Arquitectures";
+        var mkdocs_page_input_path = "arquitectures.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> RoomFinder project
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Domain Driven Design</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Clean Arquitectures</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#patrones-utilizados">Patrones utilizados</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#patrones-futuros">Patrones futuros</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../devops/">DevOps</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">RoomFinder project</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Clean Arquitectures</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="clean-arquitectures">Clean Arquitectures</h1>
+<h2 id="patrones-utilizados"><u>Patrones utilizados</u></h2>
+<p><img alt="Arquitectura actual" src="/ArquitecturaActual.png" />
+En el desarrollo de los microservicios de cliente, reserva y habitación, se implementaron diversos patrones de diseño que optimizan la estructura y el comportamiento de estas aplicaciones. Los patrones utilizados fueron:</p>
+<p><strong><p style="color: #2F74C3;">1. Patrones de creación</p></strong> </p>
+<p>• <strong><em>Factory Method:</em></strong>  Facilita la creación de objetos de manera flexible y eficiente.</p>
+<p>• <strong><em>Transfer Object:</em></strong> Permite el intercambio de datos de forma simplificada entre componentes del sistema.</p>
+<p><strong><p style="color: #2F74C3;">2. Patrones de estructura</p></strong></p>
+<p>• <strong><em>Patrón Repository:</em></strong> Centraliza el acceso y manipulación de datos, mejorando la organización y mantenibilidad del código.</p>
+<p><strong><p style="color: #2F74C3;">3. Patrones de comportamiento</p></strong></p>
+<p>• <strong><em>Patrón Strategy:</em></strong> Permite definir algoritmos intercambiables para resolver una tarea específica, brindando mayor flexibilidad y extensibilidad a la aplicación.</p>
+<p><strong><p style="color: #2F74C3;">4. Patrones de arquitectura</p></strong></p>
+<p>• <strong><em>Arquitectura Hexagonal:</em></strong> Se realizó una separación por capas que permitió una mejor organización del código y una mayor facilidad para realizar cambios y mejoras en cada componente de forma aislada, sin afectar otras partes del sistema.</p>
+<p>• <strong><em>Microservicios:</em></strong> Enfoque arquitectónico principal, que divide la aplicación en componentes independientes y desacoplados, facilitando su escalabilidad y mantenimiento.</p>
+<p>• <strong><em>Cliente-Servidor:</em></strong> Gestiona las interacciones entre los usuarios y los servicios.</p>
+<p>• <strong><em>Patrón MVC:</em></strong> Organiza la estructura de la aplicación en modelos, vistas y controladores, mejorando la separación de responsabilidades y la legibilidad del código.</p>
+<h2 id="patrones-futuros"><u>Patrones futuros</u></h2>
+<p><img alt="Arquitectura futuro" src="/ArquitecturaFuturo.png" /></p>
+<p><img alt="Despliegue" src="../Despliegue.png" /></p>
+<p>En busca de mejorar nuestra aplicación, se tuvieron en cuenta algunos patrones que pueden contribuir significativamente en la arquitectura, el rendimiento y la gestión del sistema a medida que avanza en su desarrollo. Llegando así a patrones que nos proporcionen una mayor eficiencia, mantenibilidad e infraestructura más sólida y adaptable.</p>
+<p>• <strong><em>Patrón CQRS (Command Query Responsibility Segregation):</em></strong> Es una opción que se considera para el microservicio de Reserva. Este patrón propone tener dos bases de datos: una para lectura y otra para escritura. Esto permite optimizar el rendimiento al tener una base de datos optimizada para las operaciones de consulta y otra para las operaciones de escritura evitando posibles cuellos de botella en las operaciones.</p>
+<p>• <strong><em>Patrón de API Gateway:</em></strong> Establece un punto de entrada único para comunicar los microservicios de cliente, reserva y habitación. Al usar un API Gateway, podemos centralizar y gestionar de manera más eficiente las solicitudes que llegan a nuestros microservicios, lo que facilita el control de acceso, la seguridad y el monitoreo de las comunicaciones entre los diferentes componentes de la aplicación.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href=".." class="btn btn-neutral float-left" title="Domain Driven Design"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../devops/" class="btn btn-neutral float-right" title="DevOps">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../devops/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

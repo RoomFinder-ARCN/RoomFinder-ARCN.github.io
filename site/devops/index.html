@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>DevOps - RoomFinder project</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "DevOps";
+        var mkdocs_page_input_path = "devops.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> RoomFinder project
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Domain Driven Design</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../arquitectures/">Clean Arquitectures</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">DevOps</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#repositorio-de-codigo">Repositorio de código</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#codespace">Codespace</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#analisis-estatico-de-codigo">Análisis estático de código</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">RoomFinder project</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">DevOps</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="devops">DevOps</h1>
+<h2 id="repositorio-de-codigo"><u>Repositorio de código</u></h2>
+<p>El código fuente del proyecto se encuentra en tres repositorios dentro de la organización <a href="https://github.com/RoomFinder-ARCN">RoomFinder-ARCN</a> en GitHub, en donde se trabajaron los microservicios de cliente, reserva y habitación.</p>
+<h2 id="codespace"><u>Codespace</u></h2>
+<p>Se creo un entorno de desarrollo basado en la nube directamente desde los repositorios de GitHub, en donde se puede codificar, compilar, depurar y colaborar directamente desde un navegador web, eliminando la necesidad de configurar manualmente los entornos de desarrollo en las máquinas locales.</p>
+<p>Para la creación de los codespace, cada uno de los respositorios de la organización del proyecto cuenta con un archivo devcontainer.json que permite definir y configurar el entorno de desarrollo, la imagen del contenedor, las extensiones, herramientas y dependencias necesarias para su adecuada compilación.</p>
+<p><a href="https://github.com/RoomFinder-ARCN">Configuración devcontainer.json</a></p>
+<pre><code>devcontainer.json    # Archivo de configuración
+
+"name": ...            
+    "features": ...      
+    "extensions": ...    
+    ...
+</code></pre>
+<h2 id="analisis-estatico-de-codigo"><u>Análisis estático de código</u></h2>
+<p>Con ayuda de SonarCloud se logró la integración continua y el análisis estático de código en donde se obtuvieron métricas de calidad, estadísticas,  porcentajes de cobertura del código, entre otros,  para realizar correcciones de manera temprana y entregar un software más seguro, consistente y mantenible.</p>
+<p><img alt="SonarCloud1" src="../SonarCloud1.png" /></p>
+<p><img alt="SonarCloud2" src="../SonarCloud2.png" /></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../arquitectures/" class="btn btn-neutral float-left" title="Clean Arquitectures"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../arquitectures/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

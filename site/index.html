@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="None" name="description"/>
+<link href="img/favicon.ico" rel="shortcut icon"/>
+<title>RoomFinder project</title>
+<link href="css/theme.css" rel="stylesheet"/>
+<link href="css/theme_extra.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" rel="stylesheet"/>
+<script>
+        // Current page data
+        var mkdocs_page_name = "Domain Driven Design";
+        var mkdocs_page_input_path = "index.md";
+        var mkdocs_page_url = null;
+      </script>
+<!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+</head>
+<body class="wy-body-for-nav" role="document">
+<div class="wy-grid-for-nav">
+<nav class="wy-nav-side stickynav" data-toggle="wy-nav-shift">
+<div class="wy-side-scroll">
+<div class="wy-side-nav-search">
+<a class="icon icon-home" href="."> RoomFinder project
+        </a><div role="search">
+<form action="./search.html" class="wy-form" id="rtd-search-form" method="get">
+<input aria-label="Search docs" name="q" placeholder="Search docs" title="Type search term here" type="text"/>
+</form>
+</div>
+</div>
+<div aria-label="Navigation menu" class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation">
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal current" href="#">Domain Driven Design</a>
+<ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="#caso-de-negocio">Caso de negocio</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#dominios">Dominios</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#mvp">MVP</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="arquitectures/">Clean Arquitectures</a>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="devops/">DevOps</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift">
+<nav aria-label="Mobile navigation menu" class="wy-nav-top" role="navigation">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href=".">RoomFinder project</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content"><div aria-label="breadcrumbs navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li><a aria-label="Docs" class="icon icon-home" href="."></a></li>
+<li class="breadcrumb-item active">Domain Driven Design</li>
+<li class="wy-breadcrumbs-aside">
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div class="section" itemprop="articleBody">
+<h1 id="domain-driven-design">Domain Driven Design</h1>
+<h2 id="caso-de-negocio"><u>Caso de negocio</u></h2>
+<p><strong>Sistema de reservas de habitaciones de hotel:</strong>
+Como cliente, quiero poder buscar y reservar habitaciones de hotel disponibles para las fechas de mi viaje y filtrar los resultados por tipo de habitación o precio.</p>
+<h2 id="dominios"><u>Dominios</u></h2>
+<p><strong>Actividad para la identificación de dominios:</strong> <a href="https://miro.com/app/board/uXjVNjZ6Edk=/">Event storming</a></p>
+<p>Para el desarrollo de esta actividad se tuvieron en cuenta:</p>
+<ul>
+<li>Dominios</li>
+<li>Comandos</li>
+<li>Roles</li>
+<li>Reglas de negocio</li>
+<li>Agregados</li>
+<li>Issues</li>
+<li>Sistemas externos</li>
+</ul>
+<p>Y finalmente se definieron los dominios como se muestra a continuación:</p>
+<table>
+<thead>
+<tr>
+<th>Cliente</th>
+<th>Habitación</th>
+<th>Reserva</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Registro e información del cliente</td>
+<td>Información por tipos y precios</td>
+<td>Busqueda de habitaciones</td>
+</tr>
+<tr>
+<td>Reservas del cliente</td>
+<td>Disponibilidad de habitaciones</td>
+<td>Reserva y cancelación</td>
+</tr>
+</tbody>
+</table>
+<h2 id="mvp"><u>MVP</u></h2>
+<div class="mermaid">sequenceDiagram
+    participant Cliente
+    participant Reserva
+    participant Habitación
+
+    Cliente -&gt;&gt; Reserva: Solicitud de reserva
+    Reserva -&gt;&gt; Habitación: Disponibilidad y precio
+    Habitación --&gt;&gt; Reserva: Respuesta de disponibilidad
+    Reserva --&gt;&gt; Cliente: Respuesta de reserva para fechas de viaje
+</div>
+<blockquote>
+<p><strong><a style="color: #2F74C3;">Nota:</a></strong> Para cada uno de los microservicios se creo un repositorio estructurado de código en donde se encontrarán las entidades, el controlador, los repositorios, las pruebas unitarias y demás clases o configuraciones necesarias para compilar el proyecto. </p>
+</blockquote>
+</div>
+</div><footer>
+<div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
+<a class="btn btn-neutral float-right" href="arquitectures/" title="Clean Arquitectures">Next <span class="icon icon-circle-arrow-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<!-- Copyright etc -->
+</div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+</div>
+</div>
+</section>
+</div>
+<div aria-label="Versions" class="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span><a href="arquitectures/" style="color: #fcfcfc">Next »</a></span>
+</span>
+</div>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script>var base_url = ".";</script>
+<script src="js/theme_extra.js"></script>
+<script src="js/theme.js"></script>
+<script src="search/main.js"></script>
+<script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+<script type="module">import mermaid from "https://unpkg.com/mermaid@10.4.0/dist/mermaid.esm.min.mjs";
+mermaid.initialize({});</script></body>
+</html>
+<!--
+MkDocs version : 1.6.0
+Build Date UTC : 2024-05-11 02:10:48.453052+00:00
+-->
